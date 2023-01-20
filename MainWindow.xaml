@@ -1,0 +1,19 @@
+﻿<Window x:Class="AutoMorse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoMorse"
+        mc:Ignorable="d"
+        Title="自动解析频谱图摩斯码" Height="450" Width="800">
+    <Grid>
+        <Button Content="浏览" HorizontalAlignment="Left" Margin="377,33,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Content="本地图片地址" HorizontalAlignment="Left" Margin="17,30,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="imageLocation" Content="" HorizontalAlignment="left" Margin="100,30,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="img" HorizontalAlignment="Left" Height="132" Margin="17,67,0,0" VerticalAlignment="Top" Width="419"/>
+        <TextBox x:Name="MorseCode" HorizontalAlignment="Left" Margin="460,0,0,0" TextWrapping="Wrap" Text="图片内摩斯码" VerticalAlignment="Center" Width="133" AcceptsReturn="True" Height="270"/>
+        <TextBox x:Name="EndResult" HorizontalAlignment="Left" Margin="638,0,0,0" TextWrapping="Wrap" Text="解码内容" VerticalAlignment="Center" Width="139" Height="270" AcceptsReturn="True"/>
+        <Image x:Name="norgbImg" HorizontalAlignment="Left" Height="100" Margin="17,255,0,0" VerticalAlignment="Top" Width="423"/>
+
+    </Grid>
+</Window>
